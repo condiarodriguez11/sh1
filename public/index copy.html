@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Accora - Empresa configurator</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/build/bundle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://global-uploads.webflow.com/621c376689014f3080f9a3bb/css/accora.webflow.78012faef.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Embed code-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/accora-care/configurators@1.9.1/public/configurators/all.js"
+    ></script>
+    <!--Configurator styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/accora-care/configurators@1.9.1/public/configurators/bundle.css"
+    />
+    <!--Hubspot: copy this only if hubspot has never been added yet-->
+    <script
+      charset="utf-8"
+      type="text/javascript"
+      src="https://js-eu1.hsforms.net/forms/embed/v2.js"
+    ></script>
+    <style>
+      /************ Hubspot CSS ************/
+      :root {
+        /* Form Base */
+        --base-mainColor: #008871;
+        --base-secondaryColor: #ecd9ff;
+      }
+
+      html,
+      body {
+        font-size: 62%;
+      }
+
+      /* ---- Start of Form Base ---- */
+
+      /* Form */
+      .hbspt-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      fieldset {
+        max-width: none !important;
+      }
+      fieldset.form-columns-2,
+      fieldset.form-columns-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+      }
+
+      /* Fields */
+      .hs-form-field {
+        margin-bottom: calc(2rem / var(--root-font-size));
+      }
+
+      .hs-form-field,
+      fieldset.form-columns-1 .hs-form-field,
+      fieldset.form-columns-2 .hs-form-field,
+      fieldset.form-columns-1 .input,
+      fieldset.form-columns-2 .input,
+      fieldset.form-columns-1 .hs-input,
+      fieldset.form-columns-2 .hs-input {
+        width: 100% !important;
+      }
+
+      .hs-form-field label {
+        font-size: calc(1.5rem / var(--root-font-size));
+        display: flex;
+      }
+
+      .hs-dependent-field {
+        width: 100%;
+      }
+
+      .hs-form-field.hs-message,
+      .hs-form-field.hs_email,
+      .hs_submit {
+      }
+
+      /* Input Base */
+      input,
+      textarea,
+      .nice-select {
+        width: 100%;
+        height: calc(4.8rem / var(--root-font-size)) !important;
+        font-family: inherit;
+        font-size: calc(1.6rem / var(--root-font-size));
+        letter-spacing: -0.01em;
+        font-weight: 400;
+        line-height: calc(1.2 / var(--root-font-size));
+        color: #000;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+
+        box-shadow: inset 0 0 0 0 transparent, 0 0 0 0 transparent,
+          0 4px 23px 0 rgb(130 148 165 / 18%);
+        -webkit-transition: border-color 250ms
+            cubic-bezier(0.455, 0.03, 0.515, 0.955),
+          box-shadow 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: border-color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955),
+          box-shadow 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+        padding: calc(1.6rem / var(--root-font-size));
+        margin-bottom: 0px;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+
+        -webkit-box-shadow: 0 0 0 100px transparent inset !important;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 100px white inset !important;
+      }
+
+      .hs-fieldtype-textarea textarea {
+        height: calc(18rem / var(--root-font-size));
+        min-width: 100%;
+        max-width: 100%;
+        min-height: calc(18rem / var(--root-font-size));
+        max-height: calc(60rem / var(--root-font-size));
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #5c6c7b;
+      }
+
+      input:hover,
+      textarea:hover,
+      input:focus,
+      textarea:focus,
+      .nice-select:active,
+      .nice-select.open,
+      .nice-select:focus,
+      .nice-select:hover {
+        border: 1px solid #008871;
+        box-shadow: inset 0 0 0 1px #007aff, 0 0 0 4px rgb(0 122 255 / 10%),
+          0 4px 23px 0 rgb(130 148 165 / 18%);
+      }
+
+      /* Checkbox */
+      .hs-fieldtype-booleancheckbox {
+        order: 3;
+        grid-column-start: span 2;
+        grid-column-end: span 2;
+      }
+      .inputs-list,
+      .hs-fieldtype-booleancheckbox ul,
+      .hs-form-checkbox {
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .hs-fieldtype-booleancheckbox label {
+        font-size: calc(1.6rem / var(--root-font-size));
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .hs-fieldtype-checkbox .hs-field-desc {
+        font-size: calc(1.2rem / var(--root-font-size));
+      }
+
+      .legal-consent-container .hs-form-booleancheckbox-display > span {
+        margin-left: 0 !important;
+      }
+
+      .hs-fieldtype-booleancheckbox input[type="checkbox"],
+      .hs-form-checkbox input[type="checkbox"] {
+        margin-top: calc(0.4rem / var(--root-font-size));
+        width: 16px !important;
+        height: 16px !important;
+        flex-shrink: 0;
+
+        margin-right: 8px;
+        border-radius: 4px;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .hs-fieldtype-booleancheckbox input[type="checkbox"]:checked,
+      .hs-form-checkbox input[type="checkbox"]:checked {
+        border-color: transparent;
+        background-size: 12px 12px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg);
+        background-color: var(--base-mainColor);
+      }
+
+      /* Button */
+      .hs_submit {
+        width: 100%;
+        display: flex;
+        margin-top: calc(1.6rem / var(--root-font-size));
+      }
+
+      .hs-button.primary.large {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        display: inline-block;
+        line-height: inherit;
+        cursor: pointer;
+        color: #fff;
+        height: calc(5.5rem / var(--root-font-size));
+
+        font-size: calc(1.4rem / var(--root-font-size));
+        font-weight: 400;
+        line-height: calc(1.5 / var(--root-font-size));
+
+        padding: calc(1.4rem / var(--root-font-size)) calc(3.2rem / var(--root-font-size));
+
+        border: none;
+        border-radius: calc(0.6rem / var(--root-font-size));
+        background-color: var(--base-mainColor);
+        -webkit-transition: background-color 250ms
+            cubic-bezier(0.455, 0.03, 0.515, 0.955),
+          color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: background-color 250ms
+            cubic-bezier(0.455, 0.03, 0.515, 0.955),
+          color 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+
+      .hs-button.primary.large:hover {
+        background-color: #19a290;
+      }
+
+      .hs-richtext p {
+        font-size: calc(1.4rem / var(--root-font-size));
+      }
+
+      /* Success */
+      .submitted-message {
+        font-size: calc(1.6rem / var(--root-font-size));
+        font-weight: 500;
+        padding: calc(2rem / var(--root-font-size)) calc(3rem / var(--root-font-size));
+        display: flex;
+        color: white;
+        border-radius: 6px;
+        background: #008871;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .submitted-message p {
+        margin: 0;
+      }
+
+      /* Errors */
+      .hs-error-msgs {
+        list-style: none;
+        padding-left: calc(1rem / var(--root-font-size));
+      }
+
+      .hs-error-msgs label {
+        font-size: calc(1.2rem / var(--root-font-size));
+        margin: 0;
+        margin-top: calc(0.25rem / var(--root-font-size));
+        font-weight: 400;
+        text-transform: none;
+        opacity: 1;
+        color: #e33b45;
+        text-align: left;
+        display: block;
+      }
+
+      .hs-error-msgs li {
+        margin: 0;
+        padding: 0;
+        background: none;
+      }
+
+      .hs_error_rollup {
+        display: none !important;
+      }
+
+      /* --- Responsive --- */
+      @media screen and (max-width: 767px) {
+        /* -- Base -- */
+        /* Form */
+        .hbspt-form form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        /* Fields */
+        .hs-form-field {
+          margin-bottom: calc(0.8rem / var(--root-font-size));
+        }
+        /* Inputs */
+        input,
+        textarea,
+        .nice-select {
+          font-size: calc(2rem / var(--root-font-size));
+        }
+        /* Buttons */
+        .hs-button.primary.large {
+          width: 100%;
+        }
+        /* Checkbox */
+        .hs-fieldtype-booleancheckbox {
+          grid-column-start: span 1;
+          grid-column-end: span 1;
+          justify-self: center;
+        }
+        /* Success */
+        .submitted-message {
+          font-size: calc(2rem / var(--root-font-size));
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="empresa-configurator"></div>
+    <div style="height: 50vh"></div>
+    <div class="content" id="floorbed1"></div>
+    <div style="height: 20vh"></div>
+    <div class="content" id="configura-advance"></div>
+    <div style="height: 20vh"></div>
+    <div id="content"></div>
+    <div style="height: 50vh"></div>
+    <script type="text/javascript">
+      AccoraConfigurators.Empresa("empresa-configurator");
+      AccoraConfigurators.FloorbedOne("floorbed1");
+      AccoraConfigurators.ConfiguraAdvance("configura-advance");
+    </script>
+
+    <!-- <script>
+      const CACHE_KEY = "ACC_WEBINAR_ACCESS_FORM";
+      const hideForm = () => {
+        try {
+          localStorage.setItem(CACHE_KEY, "TRUE");
+          document.getElementById("recording-registration").style.display =
+            "none";
+          document.getElementById("recording-video").style.display = "block";
+        } catch {}
+      };
+
+      $(window).load(function () {
+        try {
+          if (localStorage.getItem(CACHE_KEY) === "TRUE") {
+            hideForm();
+          }
+        } catch {}
+      });
+
+      hbspt.forms.create({
+        region: "eu1",
+        portalId: "25005558",
+        formId: "6cf5a34d-7a37-4747-b645-862694b81b9b",
+        onFormSubmitted: () => {
+          hideForm();
+        },
+      });
+    </script> -->
+
+    <!--[if lte IE 8]>
+      <script
+        charset="utf-8"
+        type="text/javascript"
+        src="//js-eu1.hsforms.net/forms/v2-legacy.js"
+      ></script>
+    <![endif]-->
+  </body>
+</html>
